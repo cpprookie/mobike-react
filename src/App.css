@@ -1,0 +1,491 @@
+html, body, div {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Open Sans,Helvetica Neue,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+* {   
+  box-sizing: border-box;  
+}
+
+.header-wrapper {
+  height: 600px;
+  padding-top: 600px;
+  position: relative;
+  background-image: url(http://mobike.com/global/public/hero.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.header-wrapper::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(38, 41, 48, .3);
+  z-index: 1; 
+}
+
+.header-childern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 0 15px;
+  padding-top: 50px;
+  text-align: center;
+  z-index: 2;
+}
+
+.header-title {
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.header-subtitle {
+  font-size: 16px;
+}
+
+.header-download {
+  margin-top: 40px;
+}
+
+.header-download img {
+  width: 190px;
+  margin: 0 10px 20px;
+}
+
+
+.header-navigation {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 55px;
+  width: 100%;
+  box-sizing: content-box;
+  z-index: 2;
+  text-align: center;
+}
+
+.navigation-logo {
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-left: 32px;
+  height: 100%;
+}
+
+.navigation-logo a {
+  height: 33px;
+}
+
+.navigation-image-normal {
+  display: inline;
+}
+
+.navigation-image-fixed {
+  display: none;
+}
+
+.navigation-fixed .navigation-image-fixed  {
+  display: inline
+}
+
+.navigation-fixed .navigation-image-normal  {
+  display: none;
+}
+
+
+.navigation-items {
+  display: flex;
+  align-items: center;
+  line-height: 55px;
+  float: right;
+}
+
+.navigation-item {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-right: 32px;
+}
+
+.navigation-download {
+  background-color: #fff;
+  opacity: .8;
+  color: #222;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+
+.navigation-download:hover {
+  opacity: 1;
+}
+
+/* scroll时改变header样式 */
+.navigation-fixed .header-navigation {
+  position: fixed;
+  background: #fff;
+  animation-name: fadeInDown;
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navigation-fixed .navigation-item {
+  color: #262930;
+  opacity: 0.5;
+}
+
+.navigation-fixed .navigation-download{
+  background: #f05b48;
+  color: white;
+}
+
+.home-feature-1-wrap {
+  max-width: 100%;
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.home-feature-1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-feature-1-text-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home-feature-title {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+  margin: 0 0 24px;
+}
+
+.home-feature-1-title {
+  color: #262930
+}
+
+.home-feature-subtitle {
+  font-size: 16px;
+}
+
+.home-feature-1-subtitle {
+  color: #666;
+  opacity: .75;
+}
+
+.home-feature-1-image img {
+  max-height: 560px;
+  display: block;
+}
+
+.home-feature-2 {
+  background-image: url("http://mobike.com/global/public/home__feature_2_image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+.home-feature-2-overlay {
+  padding: 200px 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(38, 41, 48, .3)  
+}
+
+.home-feature-2-wrap {
+  display: flex;
+  max-width: 100%;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.home-feature-2-empty, .home-feature-2-text {
+  width: 50%;
+}
+
+.home-feature-2-text-wrap {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.home-feature-2-text-title, .home-feature-2-text-subtitle {
+  color: white;
+}
+
+
+.home-feature-3 {
+  position: relative;
+}
+
+.home-feature-3-image {
+  max-width: 50%;
+}
+
+.home-feature-3-image  img{
+  display: block;
+}
+
+.home-feature-3-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+
+.home-feature-3-empty {
+  width: 50%; 
+}
+
+.home-feature-3-text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-feature-3-text-wrap {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.home-feature-3-title {
+  color: #262930
+}
+
+.home-feature-3-subtitle {
+  color: #666;
+  opacity: .75;
+}
+
+
+.home-feature-4 {
+  padding-top: 80px;
+  background: #262930;
+  text-align: center;
+}
+
+.home-feature-4-text {
+  margin: 0 auto;
+  padding: 0 15px 120px;
+  max-width: 585px;
+}
+
+.home-feature-4-title {
+  color: #fff;
+}
+
+.home-feature-4-subtitle {
+  color: #fff;
+  opacity: .75;
+}
+
+.home-feature-4-image img {
+  margin: 0 auto;
+  max-height: 360px;
+  display: block;
+}
+
+.home-reviews {
+  background: #f8f8f8;
+}
+
+/* 
+ * @todo mobike官方网站是在style上后加的width，应该是探测了设备宽度之后的操作。
+ * 在做移动端适配的时候把它补回来。 
+ */
+.home-reviews-review {
+  width: 750px;
+}
+
+.home-reviews-title {
+  padding: 80px 0;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #262930;
+}
+
+.home-reviews-slider {
+  max-width: 780px;
+  margin:0 auto;
+  padding: 0 15px;
+  padding-bottom: 80px; 
+}
+
+.slick-slider, .slick-list {
+  position: relative;
+  display:  block;
+}
+
+.slick-list {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 1;
+  width: 3000px;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.home-reviews-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.home-reviews-author {
+  text-align: center;
+  color: #262930;
+  font-size: 12px;
+  font-weight: 600
+}
+
+.slick-dots {
+  list-style: none;
+  display: block;
+  margin: 40px 0 0;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+.slick-dots li, .slick-dots li button {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  margin: 0 2px;
+  padding: 0;
+}
+
+.slick-dots li button {
+  border: 0;
+  background: 0 0;
+  display: block;
+  outline: 0;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  padding: 5px;
+}
+
+.slick-dots li button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  line-height: 20px;
+  text-align: center;
+  background: #000;
+  border-radius: 10px;
+  color: #000;
+  opacity: .25;
+}
+
+.slick-dots li.slick-active  button::before {
+  color: #000;
+  opacity: .75;
+}
+
+.footer {
+  background: #f05b48;
+  color: #fefefe;
+  padding: 72px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  max-height: 120px;
+}
+
+.footer-social {
+  margin-top: 56px;
+  opacity: 0.5;
+}
+
+.footer-social a {
+  margin: 0 20px;
+}
+
+.footer-social img {
+  width: 40px
+}
+
+.footer-text {
+  font-size: 13px;
+  opacity: .5;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer-text a {
+  color: #fefefe;
+}

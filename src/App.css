@@ -20,12 +20,14 @@ img {
 }
 
 .header-wrapper {
-  height: 600px;
-  padding-top: 600px;
   position: relative;
-  background-image: url(http://mobike.com/global/public/hero.jpg);
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.header-wrapper-normal {
+  height: 360px;
+  padding-top: 360px;
 }
 
 .header-wrapper::before{
@@ -62,22 +64,22 @@ img {
   z-index: 2;
 }
 
-.header-title {
+.home-header-title {
   font-size: 56px;
   line-height: 64px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-.header-subtitle {
+.home-header-subtitle {
   font-size: 16px;
 }
 
-.header-download {
+.home-header-download {
   margin-top: 40px;
 }
 
-.header-download img {
+.home-header-download img {
   width: 190px;
   margin: 0 10px 20px;
 }
@@ -223,12 +225,12 @@ img {
   display: block;
 }
 
-.home-feature-2 {
-  background-image: url("http://mobike.com/global/public/home__feature_2_image.jpg");
+.parallax , .fullscreen-parallax {
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 50%;
 }
+
 
 .home-feature-2-overlay {
   padding: 200px 0;
@@ -337,14 +339,6 @@ img {
   background: #f8f8f8;
 }
 
-/* 
- * @todo mobike官方网站是在style上后加的width，应该是探测了设备宽度之后的操作。
- * 在做移动端适配的时候把它补回来。 
- */
-.home-reviews-review {
-  width: 750px;
-}
-
 .home-reviews-title {
   padding: 80px 0;
   font-size: 32px;
@@ -376,8 +370,6 @@ img {
   top: 0;
   left: 0;
   display: block;
-  opacity: 1;
-  width: 3000px;
 }
 
 .slick-slide {
@@ -488,4 +480,172 @@ img {
 
 .footer-text a {
   color: #fefefe;
+}
+
+.header-title {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.about-content {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  line-height: 1.7em;
+}
+
+.about-content h1 {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #262930;
+  margin: 0;
+}
+
+.about-content p {
+  color: #666;
+  font-size: 13px;
+}
+
+.about-content-social {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content-social a {
+  margin: 0 20px;
+} 
+
+.about-content-social img {
+  width: 34px;
+}
+
+.about-colored-image-slide {
+  background-color: #f05b48;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.about-colored-image-slide h1 {
+  color: #fff;
+  font-size: 72px;
+  line-height: 80px;
+  font-weight: 300;
+  margin: 0;
+  z-index: 1;
+}
+
+.about-colored-image-slide h2 {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.fullscreen-parallax {
+  height: 100vh;
+}
+
+.about-colored-image-slide-overlay {
+  mix-blend-mode: multiply;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #f05b48;
+  z-index: 1;
+}
+
+.about-normal-image-slide img{
+  width: 100%;
+  height: auto;
+  max-height: none;
+  display: block;
+}
+
+.header-title span {
+  display: block;
+}
+
+.request-form-content {
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 40px 15px 80px;
+}
+
+.request-form-content-title {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 0;
+  padding-top: 0;
+  color: #262930;
+}
+
+.request-form-content-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+}
+
+.request-form-form {
+  max-width: 500px;
+  margin: 40px auto 0;
+}
+
+.request-form-form label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.request-form-form b {
+  display: block;
+  color: #262930;
+  margin-bottom: 2px;
+}
+
+.request-form-form input, .request-form-form button, .request-form-form textarea {
+  border-radius: 4px;
+}
+
+.request-form-form input, .request-form-form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+.request-form-form textarea {
+  height: 100px;
+}
+
+.request-form-form select {
+  width: 100%
+}
+
+.request-form-form button {
+  width: 100%;
+  background-color: #f05b48;
+  color: #fff;
+  height: 40px;
+  font-size: 14px;
+  border: 0;
 }

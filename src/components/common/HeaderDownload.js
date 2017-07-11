@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class HeaderDownload extends Component {
   render () {
     return (
-      <div className="header-download">
+      <div className="home-header-download">
         <a href="https://itunes.apple.com/app/id1044535426" target="_blank" rel="noopener noreferrer">
           <img src="http://mobike.com/global/public/home__download_ios.png" alt="ios"/>
         </a>

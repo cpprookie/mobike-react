@@ -1,5 +1,5 @@
 import React, {Component} from 'react' 
-import Text from './common/Text'
+import Text from '../common/Text'
 
 class Feature1 extends Component {
   render () {

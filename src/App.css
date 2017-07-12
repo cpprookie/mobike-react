@@ -20,14 +20,11 @@ img {
 }
 
 .header-wrapper {
+  height: 360px;
+  padding-top: 360px;
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
-}
-
-.header-wrapper-normal {
-  height: 360px;
-  padding-top: 360px;
 }
 
 .header-wrapper::before{
@@ -648,4 +645,158 @@ img {
   height: 40px;
   font-size: 14px;
   border: 0;
+}
+
+.blog-content {
+  margin: 0 auto;
+  padding: 40px 15px 0;
+  max-width: 1170px;
+  display: flex;
+}
+
+.blog-post {
+  padding-bottom: 40px;
+}
+
+.blog-post-title {
+  font-size: 32px;
+  line-height: 40px;
+} 
+
+.blog-post-title-link {
+  color: #262930;
+  font-weight: 300;
+}
+
+.blog-post-info {
+  color: #666;
+  font-size: 13px;
+  margin: 8px 0 20px;
+}
+
+.blog-post-image img {
+  display: block;
+  max-height: none;
+}
+
+.blog-post-body {
+  margin: 20px 0;
+  color: #666;
+  font-size: 15px;
+}
+
+.blog-post-more-link {
+  color: #f05b48;
+  font-size: 15px;
+}
+
+.blog-post-more-link:after {
+  content: "\2192";
+  margin-left: 4px;
+  font-family: sans-serif;
+}
+
+.blog-sidebar {
+  min-width: 260px;
+  max-width: 260px;
+  margin-left: 30px;
+}
+
+.sidebar-blog-title {
+  font-size: 15px;
+  line-height: 24px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #262930;
+  padding-bottom: 8px; 
+}
+
+.sidebar-blog-post {
+  font-size: 13px;
+  padding-bottom: 8px;
+}
+
+.sidebar-blog-post-title {
+  color: #f05b48;
+}
+
+.sidebar-blog-post-date {
+  color: #666;
+  margin-left: 0.5em;
+}
+
+.faq-content {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 40px 15px;
+  display: flex;
+}
+
+.faq-menu {
+  min-width: 260px;
+  max-width: 260px;
+  padding-right: 30px;
+}
+
+.faq-menu-section {
+  margin-bottom: 10px;
+}
+
+.faq-menu-section a {
+  color: #f05b48;
+  font-size: 15px;
+}
+
+.faq-data {
+  border-left: 1px solid #ccc;
+  padding-left: 30px;
+}
+
+.faq-data-section {
+  padding-top: 50px;
+}
+
+.faq-data-section:first-child {
+  padding-top: 0;
+}
+
+.faq-data-title {
+  font-size: 32px;
+  line-height: 40px;
+  color: #262930;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.faq-data-question {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #262930;
+}
+
+.faq-data-answer {
+  color: #666;
+  font-size: 13px;
+}
+
+.faq-content ul {
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.faq-content table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.faq-content img {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+}
+
+.faq-content tr, .faq-content td {
+  border: 1px solid #ccc;
 }

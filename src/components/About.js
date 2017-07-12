@@ -11,7 +11,7 @@ class About extends Component {
     }
     return (
       <section className="about">
-        <Header isIndex={false} style={commonStyle} title="ABOUT" />
+        <Header isIndex={false} style={commonStyle} title="ABOUT" headerFix={this.props.headerFix} />
         <AboutContent />
         <ColorImage />
         <ImageSlide />

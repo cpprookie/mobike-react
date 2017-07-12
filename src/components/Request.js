@@ -42,13 +42,13 @@ const RequestFormContent = () => (
   </section>
 )
 
-const Request = () => {
+const Request = (props) => {
   const requestStyle = {
     backgroundImage: "url(https://mobike.com/global/public/request_form_hero.jpg)"
   }
   return (
     <section className="request-form">
-      <Header isIndex={false} style={requestStyle} title="I WANT MOBIKE HERE" />
+      <Header isIndex={false} style={requestStyle} title="I WANT MOBIKE HERE" headerFix={props.headerFix} />
       <RequestFormContent />
     </section>
   )}

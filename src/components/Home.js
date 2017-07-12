@@ -7,23 +7,6 @@ import Feature3 from '../components/home/Feature3'
 import Feature4 from '../components/home/Feature4'
 
 class Home extends Component {
-  constructor() {
-    super()
-    this.state = {headerFix : false}
-  }
-
-  handleScroll (e) {
-    if(window.scrollY > 600) {
-      this.setState({headerFix : true})
-    } else {
-      this.setState({headerFix : false})
-    }
-  }
-
-  componentDidMount () {
-    window.addEventListener("scroll", this.handleScroll.bind(this))
-  }
-
   render() {
     const indexStyle = {
       backgroundImage: "url(https://mobike.com/global/public/hero.jpg)",
@@ -32,7 +15,7 @@ class Home extends Component {
     }
     return (
       <section>
-        <Header isIndex={true} style={indexStyle} title="Let's Mobike!" headerFix={this.state.headerFix} />
+        <Header isIndex={true} style={indexStyle} title="Let's Mobike!" headerFix={this.props.headerFix} />
         <Feature1 />
         <Feature2 />
         <Feature3 />
